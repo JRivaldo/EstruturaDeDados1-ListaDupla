@@ -4,6 +4,7 @@ public class Teste {
 	public static void main(String [] args){
 		
 		ListaDupla list = new ListaDupla();
+		list.addFim(10);
 		list.add(0);
 		list.add(1);
 		list.add(2);
@@ -14,6 +15,13 @@ public class Teste {
 		list.add(7, 1);
 		
 
+		System.out.println(list.toString());
+		
+		System.out.println("Objeto atual: " + list.getNo(1).getObjeto() + "   Anterior: " + list.getNo(1).getAnterior().getObjeto() 
+				+ "   Proximo: " + list.getNo(1).getProximo().getObjeto());
+		
+		list.removerPos(1);
+		
 		System.out.println(list.toString());
 		
 		System.out.println("Objeto atual: " + list.getNo(1).getObjeto() + "   Anterior: " + list.getNo(1).getAnterior().getObjeto() 
