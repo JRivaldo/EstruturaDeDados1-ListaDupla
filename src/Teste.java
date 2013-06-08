@@ -17,15 +17,13 @@ public class Teste {
 
 		System.out.println(list.toString());
 		
-		System.out.println("Objeto atual: " + list.getNo(1).getObjeto() + "   Anterior: " + list.getNo(1).getAnterior().getObjeto() 
-				+ "   Proximo: " + list.getNo(1).getProximo().getObjeto());
+		System.out.println(list.mostrarAntProx(1));
 		
 		list.removerPos(1);
 		
 		System.out.println(list.toString());
 		
-		System.out.println("Objeto atual: " + list.getNo(1).getObjeto() + "   Anterior: " + list.getNo(1).getAnterior().getObjeto() 
-				+ "   Proximo: " + list.getNo(1).getProximo().getObjeto());
+		System.out.println(list.mostrarAntProx(1));
 		
 	}
 	

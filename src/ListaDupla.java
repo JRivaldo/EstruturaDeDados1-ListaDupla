@@ -142,7 +142,7 @@ public class ListaDupla {
 		return temp.getObjeto();
 	}
 	
-	public NoDuplo getNo(int pos){
+	private NoDuplo getNo(int pos){
 		if((pos < 0) || (pos >= size)){
 			throw new IndexOutOfBoundsException();
 		}
@@ -153,6 +153,12 @@ public class ListaDupla {
 		return temp;
 	}
 	
+	
+	public String mostrarAntProx(int pos){
+		String mostrar = "Objeto atual: " +this.getNo(pos).getObjeto() + "   Anterior: " + this.getNo(pos).getAnterior().getObjeto() 
+				+ "   Proximo: " + this.getNo(pos).getProximo().getObjeto();
+		return mostrar;
+	}
 	
 	public String toString() {
 		if(this.size == 0){ 
